@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+
+echo "---> Creating default config.json"
+cat > config.json <<EOF
+    {
+        "mysql": {
+            "host": "127.0.0.1:3306",
+            "user": "root",
+            "pass": "",
+            "name": "circle_test"
+        },
+        "email_alert": false
+    }
+EOF
